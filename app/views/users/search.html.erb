@@ -1,0 +1,5 @@
+<%= form_tag(controller: "users", action: "display", :method => "post", id: "search-form") do %>
+<!—When the search button is clicked, the action display in the controller users is called using the HTTP method post since we are sending form data -->
+<%= text_field_tag :search, params[:search], placeholder: "Search Users" %>
+<%= submit_tag "Search" %>
+<% end %>

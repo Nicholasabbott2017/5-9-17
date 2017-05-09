@@ -1,0 +1,11 @@
+<%= form_for @swing, :html => { :multipart => true } do |f| %>
+
+
+<p>
+  <%= f.file_field :video, class: 'swing'  %>
+</p>
+<p><%= f.submit "Submit" %></p>
+
+
+
+<%end%>

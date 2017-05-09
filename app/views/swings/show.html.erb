@@ -1,0 +1,7 @@
+<% if @swings.try(:any?) %>
+   <% @swings.each do |post| %>
+   
+       <%= image_tag @swing.video.url(:medium) %>
+       <%end%>
+<%end%>
+  

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SeniorProject</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <ul class="nav">
+  		<li><%=link_to "About Us",:controller =>'pages', :action => 'home' %> </li>
+  		<li><%=link_to "Contact Us",:controller =>'pages', :action => 'contact' %> </li>
+  		<li><%=link_to "Browse Swings",:controller =>'pages', :action => 'browse' %> </li>
+  		<li><%=link_to "Post Your Swing",:controller =>'swings', :action => 'new' %> </li>
+  		<li><%=link_to "Log In",:controller =>'sessions', :action => 'new' %> </li>
+  		<li><%=link_to "Swing Library",:controller =>'swings', :action => 'show' %> </li>
+
+  		</ul>
+
+  <div class="container">
+                  <% flash.each do |message_type, message| %>
+	    <div class= "alert alert-<%= message_type %>"><%=message %></div>
+	    <% end %>
+	   <%= yield %>
+		
+	    </div>
+    
+  </body>
+</html>
+

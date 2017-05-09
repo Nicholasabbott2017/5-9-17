@@ -1,0 +1,58 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body{
+background-color:white;
+color:Green;
+//background-image: url("augusta.jpg");
+    //background-color: #cccccc;
+    //height:100%;
+    
+}
+h1{
+text-align:center;
+font-size:50px;
+clear:left;
+}
+ul{
+list-style-type: none;
+margin:0;
+padding:0;
+overflow:hidden;
+background-color:white;
+}
+li{
+float:left;
+}
+.img{
+display:block;
+margin-left:auto;
+margin-right:auto;
+float:right;
+}
+.nav{
+div{
+	background-color:red;
+	}
+	}
+li a{
+display:block;
+color:black;
+text-align:center;
+padding: 10px 15px;
+text-decoration:none;
+}
+h2{
+color:green;
+text-align:center;
+clear:left;
+margin-left:auto;
+margin-right:auto;
+font-size:40px;
+}
+p{
+color:black;
+text-align:left;
+clear:left;
+font-size:20px;
+}

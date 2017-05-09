@@ -1,0 +1,8 @@
+<% for swing in @swings %>
+  <div class="swing">
+    <h3>
+     
+      <%= image_tag @swing.video.url(:small) %>
+    </h3>
+  </div>
+<% end %>
